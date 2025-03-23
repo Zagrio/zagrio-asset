@@ -1,0 +1,18 @@
+name: zagrio-asset-deployment
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy to Asset Subdomain
+        run: |
+          rm /var/www/asset -Rf || true
+          mkdir /var/www/my || true
+          cp src/. /var/www/asset/ -R
+          chown -Rf apache:apache /var/www/asset
+          find /var/www/asset -type d -exec chmod 755 {} \;
+          find /var/www/asset -type f -exec chmod 644 {} \;
