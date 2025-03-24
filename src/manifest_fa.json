@@ -1,0 +1,114 @@
+{
+    "name": "زاگریو انفورماتیک",
+    "short_name": "زاگریو",
+    "description": "زاگریو ارائه‌دهنده هاستینگ تخصصی، سرورهای اختصاصی و مجازی با پشتیبانی 24/7. خدمات ثبت دامنه، امنیت شبکه و اجاره فضای رک. سریع، امن، مطمئن.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "lang": "fa-IR",
+    "dir": "rtl",
+    "orientation": "portrait",
+    "scope": "/",
+    "categories": ["business", "productivity"],
+    "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "https://asset.zagrio.com/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/favicon/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "https://asset.zagrio.com/favicon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "https://asset.zagrio.com/favicon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "https://asset.zagrio.com/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://asset.zagrio.com/logo/logo-box-1536-1536.png",
+      "sizes": "1536x1536",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/logo/logo-box-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/logo/logo-box-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/logo/logo-box-180-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/logo/logo-box-152-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/logo/logo-box-120-120.png",
+      "sizes": "120x120",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/logo/logo-box-96-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/logo/logo-box-32-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/logo/logo-box-16-16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/logo/logo-box.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://asset.zagrio.com/logo/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
