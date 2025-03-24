@@ -7,124 +7,262 @@
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="generator" content="Copyright (C) 2025 Zagrio WebHosting - All rights reserved." />
     <style>
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #004d99;
+            --accent-color: #ff6b6b;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --text-primary: #2d3436;
+            --text-secondary: #636e72;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            background: var(--background-color);
+            color: var(--text-primary);
+        }
+
+        .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background: #f5f5f5;
         }
+
         .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px 0;
             text-align: center;
-            padding: 20px 0;
             margin-bottom: 40px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
         .section {
-            background: white;
-            padding: 20px;
+            background: var(--card-background);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
             margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
         }
-        h1, h2 {
-            color: #333;
-        }
+
         .asset-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+            gap: 25px;
         }
+
         .asset-item {
-            padding: 15px;
-            background: #f9f9f9;
-            border-radius: 6px;
-            transition: transform 0.2s;
+            background: var(--card-background);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
+
         .asset-item:hover {
-            transform: translateY(-2px);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
-        a {
-            color: #0066cc;
+
+        .asset-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .asset-item p {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .asset-item a {
+            color: var(--accent-color);
             text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            padding: 5px 0;
         }
-        a:hover {
+
+        .asset-item a:hover {
+            color: var(--primary-color);
+        }
+
+        .dimensions {
+            background: var(--background-color);
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            display: inline-block;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer a:hover {
             text-decoration: underline;
         }
-        .dimensions {
-            color: #666;
-            font-size: 0.9em;
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 30px 0;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Zagrio Asset Directory</h1>
-        <p>Official repository of Zagrio brand assets and media resources</p>
-    </div>
-
-    <div class="section">
-        <h2>Logo Assets</h2>
-        <div class="asset-grid">
-            <div class="asset-item">
-                <h3><a href="logo/logo.svg">Primary Logo (SVG)</a></h3>
-                <p>Vector format of the main Zagrio logo, perfect for scalable applications.</p>
-            </div>
-            <div class="asset-item">
-                <h3><a href="logo/logo-box.svg">Box Logo (SVG)</a></h3>
-                <p>Contained version of the Zagrio logo in vector format.</p>
-            </div>
-            <div class="asset-item">
-                <h3><a href="logo/logo-square-256-256.png">Medium Square Logo (PNG)</a></h3>
-                <p>256x256 version for general spaces.</p>
-            </div>
-            <div class="asset-item">
-                <h3><a href="logo/logo.png">Primary Logo (PNG)</a></h3>
-                <p>High-resolution raster version of the main logo.</p>
-            </div>
-            <div class="asset-item">
-                <h3><a href="logo/logo-persian.png">Persian Logo</a></h3>
-                <p>Localized version of the logo for Persian language use.</p>
-            </div>
-            <div class="asset-item">
-                <h3><a href="logo/logo-box.png">Box Logo (PNG)</a></h3>
-                <p>Contained version of the logo for general use.</p>
-            </div>
-            <div class="asset-item">
-                <h3><a href="logo/logo-box100-100.png">Small Box Logo</a></h3>
-                <p>Compact 100x100 version for smaller applications.</p>
-            </div>
-            <div class="asset-item">
-                <h3><a href="logo/logo344-121.png">Wide Logo</a></h3>
-                <p>344x121 version for header applications.</p>
-            </div>
-            <div class="asset-item">
-                <h3><a href="logo/logo200-50.png">Medium Logo</a></h3>
-                <p>200x50 version for medium-sized applications.</p>
-            </div>
-            <div class="asset-item">
-                <h3><a href="logo/logo142-50.png">Small Logo</a></h3>
-                <p>142x50 version for compact spaces.</p>
-            </div>
+        <div class="container">
+            <h1>Zagrio Asset Directory</h1>
+            <p>Official repository of Zagrio brand assets and media resources</p>
         </div>
     </div>
 
-    <div class="section">
-        <h2>QR Codes</h2>
-        <div class="asset-grid">
-            <div class="asset-item">
-                <h3><a href="QR/QR-Contact.png">Contact QR Code</a></h3>
-                <p>Scannable QR code for quick access to contact information.</p>
+    <div class="container">
+        <div class="section">
+            <h2>Logo Assets</h2>
+            <div class="asset-grid">
+                <div class="asset-item">
+                    <h3><a href="logo/logo.svg">Primary Logo (SVG)</a></h3>
+                    <p>Vector format of the main Zagrio logo, perfect for scalable applications.</p>
+                    <span class="dimensions">Vector Format</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo-box.svg">Box Logo (SVG)</a></h3>
+                    <p>Contained version of the Zagrio logo in vector format.</p>
+                    <span class="dimensions">Vector Format</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo-square-1536-1536.png">Large Square Logo</a></h3>
+                    <p>High-resolution square version for large displays.</p>
+                    <span class="dimensions">1536x1536</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo-box-1536-1536.png">Large Box Logo</a></h3>
+                    <p>High-resolution boxed version for large displays.</p>
+                    <span class="dimensions">1536x1536</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo-box-512-512.png">Medium Box Logo</a></h3>
+                    <p>Medium-sized boxed version for general use.</p>
+                    <span class="dimensions">512x512</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo-box-310-310.png">Standard Box Logo</a></h3>
+                    <p>Standard size boxed version for common applications.</p>
+                    <span class="dimensions">310x310</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo-box-192-192.png">Compact Box Logo</a></h3>
+                    <p>Compact boxed version for smaller spaces.</p>
+                    <span class="dimensions">192x192</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo-box-120-120.png">Small Box Logo</a></h3>
+                    <p>Small boxed version for minimal spaces.</p>
+                    <span class="dimensions">120x120</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo-box-96-96.png">Mini Box Logo</a></h3>
+                    <p>Mini boxed version for very small spaces.</p>
+                    <span class="dimensions">96x96</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo-box-32-32.png">Micro Box Logo</a></h3>
+                    <p>Micro boxed version for favicon and tiny spaces.</p>
+                    <span class="dimensions">32x32</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo-box-16-16.png">Nano Box Logo</a></h3>
+                    <p>Smallest boxed version for minimal applications.</p>
+                    <span class="dimensions">16x16</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo344-121.png">Wide Logo</a></h3>
+                    <p>Wide format version for header applications.</p>
+                    <span class="dimensions">344x121</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo200-50.png">Medium Wide Logo</a></h3>
+                    <p>Medium wide version for general use.</p>
+                    <span class="dimensions">200x50</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo142-50.png">Compact Wide Logo</a></h3>
+                    <p>Compact wide version for smaller spaces.</p>
+                    <span class="dimensions">142x50</span>
+                </div>
+                <div class="asset-item">
+                    <h3><a href="logo/logo-persian.png">Persian Logo</a></h3>
+                    <p>Localized version of the logo for Persian language use.</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666;">
-        <p>Copyright © 2025 Zagrio WebHosting - All rights reserved.</p>
-        <p><a href="https://www.zagrio.com">Visit www.zagrio.com</a></p>
-    </footer>
+        <div class="section">
+            <h2>QR Codes</h2>
+            <div class="asset-grid">
+                <div class="asset-item">
+                    <h3><a href="QR/QR-Contact.png">Contact QR Code</a></h3>
+                    <p>Scannable QR code for quick access to contact information.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Copyright © 2025 Zagrio WebHosting - All rights reserved.</p>
+            <p><a href="https://www.zagrio.com">Visit www.zagrio.com</a></p>
+        </footer>
+    </div>
 </body>
 </html>
