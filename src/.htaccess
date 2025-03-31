@@ -1,5 +1,4 @@
 <IfModule mod_deflate.c>
-DeflateCompressionLevel 9
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/rss+xml
 AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
